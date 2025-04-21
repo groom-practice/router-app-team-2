@@ -7,8 +7,8 @@ const router = createBrowserRouter([
     // element: <MainLayout />,
     childeren: [
       // { index: true, element: <Home /> },
-      // { path: "posts", element: <PostList /> },
-      { path: "posts/:id", element: <PostDetail /> },
+       { path: "posts", element: <PostList /> },
+      // { path: "posts/:id", element: <PostDetail /> },
       // { path: "posts/:id/edit", element: <EditPost /> },
     ],
   },
