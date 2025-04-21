@@ -1,5 +1,5 @@
 .editPostWrapper {
-  max-width: 600px;
+  width: 100%;
   margin: 0 auto;
   padding: 32px 24px;
   display: flex;
@@ -22,9 +22,22 @@
   margin-bottom: 12px;
 }
 
+.editPostForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.editPostForm input,
+.editPostForm textarea,
+.editPostForm button {
+  width: 70%;
+  max-width: 480px;
+}
+
 .editPostForm input,
 .editPostForm textarea {
-  width: 100%;
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -33,19 +46,18 @@
   resize: none;
 }
 
+.editPostForm textarea {
+  resize: vertical;
+  min-height: 160px;
+}
+
 .editPostForm input:focus,
 .editPostForm textarea:focus {
   border-color: #7b61ff;
   outline: none;
 }
 
-.editPostForm textarea {
-  resize: vertical;
-  min-height: 160px;
-}
-
 .editPostForm button {
-  align-self: flex-start;
   padding: 10px 20px;
   background-color: #7b61ff;
   color: #fff;
