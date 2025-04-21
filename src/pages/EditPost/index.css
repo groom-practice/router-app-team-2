@@ -9,46 +9,44 @@
   border-radius: 12px;
 }
 
-.editPostWrapper h2 {
+.editPostWrapper h1 {
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 8px;
   color: #222;
+  text-align: left;
 }
 
-.editPostMeta {
+.editPostWrapper h3 {
   font-size: 14px;
   color: #888;
   margin-bottom: 12px;
+  text-align: left;
 }
 
 .editPostForm {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 16px;
-}
-
-.editPostForm input,
-.editPostForm textarea,
-.editPostForm button {
-  width: 70%;
-  max-width: 480px;
+  width: 100%;
 }
 
 .editPostForm input,
 .editPostForm textarea {
+  width: 100%;
+  max-width: 480px;
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 14px;
   transition: border 0.3s;
-  resize: none;
 }
 
 .editPostForm textarea {
-  resize: vertical;
+  resize: none;
   min-height: 160px;
+  max-height: 160px;
 }
 
 .editPostForm input:focus,
@@ -59,16 +57,10 @@
 
 .editPostForm button {
   padding: 10px 20px;
-  background-color: #7b61ff;
   color: #fff;
   font-size: 15px;
   font-weight: 500;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.editPostForm button:hover {
-  background-color: #5d47d2;
 }
