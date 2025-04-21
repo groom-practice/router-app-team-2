@@ -30,7 +30,7 @@ export default function EditPost() {
   return (
     <div className='editPostWrapper'>
       <h1>Edit Post Id: {id}</h1>
-      <h3 className='editPostMeta'>마지막으로 수정한 post id: {id}</h3>
+      <h3>마지막으로 수정한 post id: {id}</h3>
 
       <form className='editPostForm' onSubmit={handleSubmit}>
         <input
