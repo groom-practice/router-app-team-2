@@ -44,7 +44,7 @@
   min-height: 160px;
 }
 
-.editPostForm button {
+/* .editPostForm button {
   align-self: flex-start;
   padding: 10px 20px;
   background-color: #7b61ff;
@@ -59,4 +59,4 @@
 
 .editPostForm button:hover {
   background-color: #5d47d2;
-}
+} */

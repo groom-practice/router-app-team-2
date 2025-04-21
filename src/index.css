@@ -120,10 +120,28 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+button {
+  background-color: var(--main-btn-color);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px;
+  margin-right: 10px;
+  line-height: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: var(--main-btn-hover-color);
+}
+:root {
+  --main-btn-color: #63638f;
+  --main-btn-hover-color: #8080b7;
 }
