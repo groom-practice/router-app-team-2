@@ -1,0 +1,62 @@
+.editPostWrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+}
+
+.editPostWrapper h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.editPostMeta {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.editPostForm input,
+.editPostForm textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.3s;
+  resize: none;
+}
+
+.editPostForm input:focus,
+.editPostForm textarea:focus {
+  border-color: #7b61ff;
+  outline: none;
+}
+
+.editPostForm textarea {
+  resize: vertical;
+  min-height: 160px;
+}
+
+.editPostForm button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  background-color: #7b61ff;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.editPostForm button:hover {
+  background-color: #5d47d2;
+}
