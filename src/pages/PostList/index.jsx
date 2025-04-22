@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
-import { deletePost, getAllPosts } from "../../apis/posts";
+//import { deletePost, getAllPosts } from "../../apis/posts";
 import "./index.css";
 import PortalModalContainer from "../../components/PortalModalContainer";
+import { deletePost, getAllPosts } from "../../apis/posts";
 
 export default function PostList() {
   const [posts, setPosts] = useState([]);
@@ -43,7 +44,7 @@ export default function PostList() {
               {post.id}. {post.title}
             </Link>
 
-            <button onClick={() => setOpenModal(post.id)}>Delete</button>
+         <button onClick={() => setOpenModal(post.id)}>Delete</button>
           </li>
         ))}
       </ul>
