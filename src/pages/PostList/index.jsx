@@ -48,7 +48,7 @@ export default function PostList() {
           </li>
         ))}
       </ul>
-{/* 모달 관련 주석 처리 */}
+
       {openModal &&
         createPortal(
           <PortalModalContainer>
