@@ -8,8 +8,8 @@ import { deletePost, getAllPosts } from "../../apis/posts";
 
 export default function PostList() {
   const [posts, setPosts] = useState([]);
-  //const [openModal, setOpenModal] = useState(null);
-  //const [isDeleting, setIsDeleting] = useState(false);
+  const [openModal, setOpenModal] = useState(null);
+  const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
     getAllPosts().then((res) => {
@@ -48,7 +48,7 @@ export default function PostList() {
           </li>
         ))}
       </ul>
-{/* 모달 관련 주석 처리
+
       {openModal &&
         createPortal(
           <PortalModalContainer>
@@ -68,7 +68,7 @@ export default function PostList() {
             </div>
           </PortalModalContainer>,
           document.body
-        )} */}
+        )}
     </section>
   );
 }
