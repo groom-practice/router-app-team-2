@@ -25,5 +25,5 @@ export async function deletePost(id) {
   const res = await fetch(`${API_URL}/${id}`, {
     method: "DELETE",
   });
-  return res.ok;
+  return res.ok
 }
