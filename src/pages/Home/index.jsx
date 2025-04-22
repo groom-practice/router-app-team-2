@@ -14,7 +14,7 @@ function Home() {
               id="userId"
               className="input"
               type="text"
-              placeholder="아이디를 입력하세요"
+              placeholder="id: test123"
             />
           </div>
 
@@ -24,7 +24,7 @@ function Home() {
               id="userPw"
               className="input"
               type="password"
-              placeholder="비밀번호를 입력하세요"
+              placeholder="pw: test123password"
             />
           </div>
 
