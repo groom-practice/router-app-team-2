@@ -16,3 +16,47 @@
   margin-bottom: 10px;
   width: 60%;
 }
+.modalWrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modalContent {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 400px;
+  padding: 10px;
+}
+.modalContent button {
+  margin: 10px 0;
+}
+.h1AndBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modalContent ul {
+  height: 200px;
+  overflow-y: auto;
+}
+.modalContent ul li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+button.delBtn {
+  background-color: red;
+  width: 17px;
+  height: 17px;
+  padding: 3px 4px;
+  margin-right: 5px;
+}
